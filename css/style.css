@@ -12,6 +12,7 @@ html {
 }
 
 body {
+  
   font-size: 1.6rem;
   font-family: 'Old Standard TT', serif;
   color: #4089a6;
@@ -349,7 +350,7 @@ main p {
 }
 
 body {
- 
+  margin: 80px auto 48px auto;
   background-color: #ffffff;
   background-image: url(../assets/background.jpg) !important;
   background-size: cover;
@@ -393,10 +394,32 @@ header {
 
 form {
   padding: 10px;
-  margin: 100px;
+  margin: 10px;
   font-size: 20px;
   font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
   background-color: #9ca2b177;
   border-radius: 20px;
 }
+
+.sidebar-content{
+  min-height: 100px;
+  margin-bottom: 30px;
+}
+
+nav {
+  position: fixed;
+  text-align: right;
+  display: block;
+  top: 64px; 
+  right: 64px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  transition: margin 1s;
+ }
+
+ nav a {
+  margin: 0 0 16px 0;
+  padding: 5px;
+ }
