@@ -55,19 +55,37 @@
                   <div class="col-sm-8">
                       <div class="main-content">
                           <form class="form-horizontal" style="width: auto">
-                              <h1 style="margin-top: 5px; margin-bottom: 15px;">Enter Your Character Stats:</h1>
-                              <div class="form-group">
+                            <h1 style="margin-top: 5px; margin-bottom: 15px;">Enter Your Character Stats:</h1>
+                            <div class="form-group">
                                 <label class="control-label col-sm-3" for="name">Character Name:</label>
                                 <div class="col-sm-9">
                                   <input type="name" class="form-control" id="name" placeholder="Enter your character's name">
                                 </div>
-                              </div>
-                              <div class="form-group">
+                            </div>
+                            <div class="form-group">
                                 <label class="control-label col-sm-3" for="photo">Character Gif:</label>
                                 <div class="col-sm-9">
                                   <input type="photo" class="form-control" placeholder="Enter your character's photo link">
                                 </div>
-                              </div>
+                            </div>
+                            <label class="control-label col-sm-3" for="photo">Choose 2 Strengths:</label>
+                            <div class="col-sm-9">
+                            <select class="form-group" id="chosenStrongAttribute" multiple="true" data-placeholder="Select Up to Two Specialties" style="width: 300px; font-size: small; float: left; margin-left: 1px; border-radius: 5px;">
+                                <option id="chosenStrongAttack" value="strongAttack">Attack</option>
+                                <option id="chosenStrongDefense" value="strongDefense">Defense</option>
+                                <option id="chosenStrongAgility" value="strongAgility">Agility</option>
+                                <option id="chosenStrongVigor" value="strongVigor">Vigor</option>
+                            </select>
+                            </div>
+                            <label class="control-label col-sm-3" for="photo">Choose 2 Weaknesses:</label>
+                            <div class="col-sm-9">
+                            <select class="form-group" id="chosenWeakAttribute" multiple="true" data-placeholder="Select Weaknesses" style="width: 300px; font-size: small; float: left; margin-left: 1px; border-radius: 5px;">
+                                <option id="chosenWeakAttack" value="weakAttack">Attack</option>
+                                <option id="chosenWeakDefense" value="weakDefense">Defense</option>
+                                <option id="chosenWeakAgility" value="weakAgility">Agility</option>
+                                <option id="chosenWeakVigor" value="weakVigor">Vigor</option>
+                            </select>
+                            </div>
                               <div class="form-group">
                                   <label class="control-label col-sm-3" for="battle">Weapon:</label>
                                   <div class="col-sm-9">
@@ -89,6 +107,7 @@
                                         <option>Amulet</option>
                                     </select>               
                                 </div>
+
                             </div>
                               <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-8">
